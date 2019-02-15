@@ -10,6 +10,22 @@ namespace c07318947fri
     {
         static void Main(string[] args)
         {
+
         }
+    }
+    class UsingRecursion
+    {
+        public static int CalculateRecursively(int n, int m)
+        {
+            int sum = n;
+
+            if (n < m)
+            {
+                n++;
+                return sum += CalculateRecursively(n, m);
+            }
+            return sum;
+        }
+
     }
 }
